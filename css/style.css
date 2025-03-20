@@ -1,0 +1,116 @@
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Cabeca*/
+
+header{
+    padding: 30px 4%;
+    background-color: #12229d;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    width: 50px;
+    scale: 4;
+}
+
+header .menu{
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+}
+
+header a{
+    color: #f4f6fc;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
+}
+header a:hover{
+    transform: scale(1.05);
+    text-shadow: 0 0 7px #cae8ff;
+}
+
+header button{
+    border: 0;
+    width: 80px;
+    scale: 1.5;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #cae8ff;
+    transition: .5s;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+header button:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 10px #cae8ff;
+}
+
+/*intro*/
+
+main .img-intro img{
+    position: relative;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid #cae8ff;
+}
+
+main .intro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10%;
+}
+main h1{
+    font-size: 52px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+main h3{
+    color: #7fc0f1;
+}
+main p{
+    margin-top: 30px;
+    width: 450px;
+}
+
+main .txt-intro img{
+    width: 40px;  
+    height: 40px; 
+    object-fit: contain;
+}
+
+main .linguagens{
+    margin-top: 20px;
+    
+}
+
+@media (max-width: 768px){
+    header .menu{
+        display: none;
+    }
+
+    main .intro{
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 100%;
+        gap: 20px;
+    }
+    main .txt-intro p{
+        width: 100%;
+    }
+    main .container{
+        width: 100%;
+    }
+    main .img-intro img{
+        width: 350px;
+    }
+}
