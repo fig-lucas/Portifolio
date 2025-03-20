@@ -13,7 +13,7 @@ header{
 header .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 header img{
@@ -57,7 +57,6 @@ header button:hover{
 /*intro*/
 
 main .img-intro img{
-    position: relative;
     width: 400px;
     border-radius: 10px;
     border: 2px solid #cae8ff;
@@ -78,7 +77,7 @@ main h3{
     color: #7fc0f1;
 }
 main p{
-    margin-top: 30px;
+    margin-top: 10px;
     width: 450px;
 }
 
@@ -90,27 +89,60 @@ main .txt-intro img{
 
 main .linguagens{
     margin-top: 20px;
-    
 }
 
+main .linguagens img{
+    margin: 0 4px;
+}
+
+main .container i{
+    display: none;
+}
+
+
+/*media query*/
 @media (max-width: 768px){
+
+    header{
+        padding: 20px;
+    }
+    header .container{
+        padding: 0px 8%;
+    }
+
     header .menu{
         display: none;
     }
 
-    main .intro{
-        flex-direction: column-reverse;
-        text-align: center;
-        width: 100%;
-        gap: 20px;
-    }
-    main .txt-intro p{
-        width: 100%;
-    }
-    main .container{
-        width: 100%;
-    }
+   
     main .img-intro img{
         width: 350px;
+    }
+
+    main .intro {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main .txt-intro p{
+        padding: 0 4%;
+        margin-top: 20px;
+    }
+
+    main .txt-secundary{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    main .container{
+        padding: 0px 8%;
+    }
+
+    main .container i{
+        display: inline-block;
+        margin-top: 52px;
     }
 }
