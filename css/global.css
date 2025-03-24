@@ -36,14 +36,18 @@ header .container{
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 header img{
     width: 100px;
     height: 80px;
     scale: 1.9;
-    object-fit: scale-down;
+    object-fit: contain;
+    transition: .2s;
+}
+header img:hover{
+    filter: drop-shadow(0px 0px 2px #cae8ff);
+    scale: 2;
 }
 
 header .menu{
@@ -52,7 +56,6 @@ header .menu{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-left: 23px;
 }
 
 header .menu i{
@@ -73,8 +76,8 @@ header a:hover{
 
 header button{
     border: 0;
-    width: 90px;
-    padding: 7px 0;
+    box-shadow: 0 0 5px #cae8ff;
+    padding: 7px 10px;
     border-radius: 15px;
     background-color: #cae8ff;
     transition: .5s;
