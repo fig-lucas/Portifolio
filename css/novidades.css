@@ -1,0 +1,31 @@
+main img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+main .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .all-novidades{
+    margin-bottom: 7rem;
+    width: 700px;
+}
+
+main .novidade{
+    display: flex;
+    border: 1px solid;
+    border-radius: 16px;
+    margin: 30px 0;
+    height: 200px;
+}
+
+main .txt-novidade{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
