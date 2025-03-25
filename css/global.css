@@ -33,7 +33,6 @@ header{
 
 header .container{
     display: flex;
-    height: 80px;
     justify-content:space-evenly;
     align-items: center;
 }
@@ -77,7 +76,7 @@ header a:hover{
 header button{
     border: 0;
     box-shadow: 0 0 5px #cae8ff;
-    padding: 7px 10px;
+    padding: 7px 7px;
     border-radius: 15px;
     background-color: #cae8ff;
     transition: .5s;

@@ -1,31 +1,44 @@
 main img{
     width: 100%;
+    padding: 10px;
     object-fit: cover;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
+    border-radius: 20px;
 }
 main .container{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 main .all-novidades{
-    margin-bottom: 7rem;
-    width: 700px;
+    width: 70%;
+    margin: 3rem auto;
 }
 
 main .novidade{
     display: flex;
-    border: 1px solid;
+    box-shadow: 0 0 10px #ffffff25;
     border-radius: 16px;
     margin: 30px 0;
-    height: 200px;
+    height: 250px;
+    background-color: #12229d3f;
+    border: 1px solid rgba(255, 255, 255, 0.062);
+    
 }
 
 main .txt-novidade{
     width: 100%;
     text-align: center;
     margin: 30px 0;
+}
+
+main .txt-novidade h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+/* EFEITOS*/
+main .novidade:hover{
+    transition: 1s;
+    box-shadow: 0 0 10px #cae8ff;
 }

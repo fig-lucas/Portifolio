@@ -1,0 +1,121 @@
+main .container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+main .caixa-contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #12229d3f;
+    width: 800px;
+    height: 350px;
+    margin-top: 150px;
+    border-radius: 16px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.267);
+    width: 800px;
+    height: 270px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+
+form input{
+    background-color: rgba(4, 4, 5, 0.473);
+    border-radius: 7px;
+    margin: 5px;
+    width: 90%;
+    height: 3rem;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 0 2px black;
+    outline: none;
+    transition: .2s;
+    color: #f4f6fc;
+    padding: 5px;
+}
+
+textarea{
+    resize: none;
+    background-color: rgba(4, 4, 5, 0.473);
+    border-radius: 7px;
+    margin: 5px;
+    width: 90%;
+    height: 100px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 0 2px black;
+    outline: none;
+    transition: .2s;
+    color: #f4f6fc;
+    padding: 5px;
+}
+
+form button{
+    margin-top: 20px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.89);
+    color: black;
+    border: none;
+    border-radius: 16px;
+    height: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #f4f6fc;
+ }
+
+main .redes-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main .redes-social a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 30px;
+    color: #f4f6fc;
+}
+
+main .redes-social li{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 10px;
+    transition: .3s;
+}
+
+main .redes-social i{
+    font-size: 50px;
+    
+}
+
+
+
+/*EFEITOS*/
+main .redes-social li:hover{
+    text-shadow: 0 0 5px #cae8ff;
+    scale: 1.02;
+}
+
+form button:hover{
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+input:focus, textarea:focus{
+    box-shadow: 0 0 5px  #f4f6fc;
+}
