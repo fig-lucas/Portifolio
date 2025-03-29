@@ -11,8 +11,9 @@ main .caixa-contato{
     background-color: #12229d3f;
     width: 800px;
     height: 350px;
-    margin-top: 150px;
+    margin-top: 4rem;
     border-radius: 16px;
+    box-shadow: 0 0 10px #ececec25;
 }
 
 form{
@@ -21,7 +22,7 @@ form{
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.267);
-    width: 800px;
+    width: 100%;
     height: 270px;
     border-radius: 20px;
     margin-left: 30px;
@@ -59,7 +60,7 @@ textarea{
     padding: 5px;
 }
 
-form button{
+form #btn-enviar{
     margin-top: 20px;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.89);
@@ -71,6 +72,7 @@ form button{
     font-size: 16px;
     transition: .2s;
     cursor: pointer;
+    padding: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -104,6 +106,11 @@ main .redes-social i{
     
 }
 
+h1{
+    text-align: center;
+    margin-top: 4rem;
+    text-transform: uppercase;
+}
 
 
 /*EFEITOS*/
@@ -112,10 +119,34 @@ main .redes-social li:hover{
     scale: 1.02;
 }
 
-form button:hover{
+form #btn-enviar:hover{
     background-color: rgba(255, 255, 255, 0.281);
 }
 
 input:focus, textarea:focus{
-    box-shadow: 0 0 5px  #f4f6fc;
+    box-shadow: 0 0 10px #ececec25;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 834px){
+   
+    main .caixa-contato{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 500px;
+        margin: 30px 8%;
+    }
+
+    form{
+        margin: 0;
+        width: 90%;
+    }
+
+    main .redes-social ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        
+    }
+
 }

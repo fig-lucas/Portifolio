@@ -4,21 +4,34 @@ h1{
     text-transform: uppercase;
 }
 
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main .sobre-geral{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    margin-top: 5rem;
-    gap: 100px;
+    margin-top: 3.5rem;
+    gap: 80px;
+    
 }
 
-main img{
-    width: 400px;
 
+main img{
+    height: 400px;
+    width: 500px;
+    border-radius: 16px;
+    border: 2px solid;
+    object-fit: cover;
+    
 }
 
 main .txt-geral{
-    width: 600px;
+    width: 500px;
+    font-size: 20px;  
    
 }

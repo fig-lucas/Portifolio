@@ -3,11 +3,11 @@ main .all-box{
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-top: 3.5rem;
 }
 
 main .box-1, .box-2, .box-3{
     background-color: #12229d3f ;
-    margin-top: 120px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -31,20 +31,25 @@ main img{
 main .all-box h2{
     margin: 10px;
     text-transform: uppercase;
+    position: relative;
+    left: 100px;
 }
 
 main .box-txt{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
     gap: 30px;
+    
 }
 
 main .box-txt i{
     font-size: 40px;
     color: #f4f6fc;
+    position: relative;
+    right: 100px;
 }
 
 main hr{
@@ -63,27 +68,64 @@ main .box-1:hover, .box-2:hover, .box-3:hover{
 }
 
 main .box-txt i:hover{
-    text-shadow: 0 0 5px #cae8ff;
-    transition: .5s;
+    text-shadow: 0 0 10px #cae8ff;
+    transition: .2s;
+
 }
 
+h1{
+    text-align: center;
+    margin-top: 4rem;
+    text-transform: uppercase;
+}
 /*MEDIA QUERY*/
+@media (max-width: 834px){
+    main .all-box{
+        flex-direction: column;
+
+        align-items: center;
+    }
+    h1{
+        margin-top: 6rem;
+    }
+}
+
+
 @media (max-width:768px){
+    body{
+        overflow-y: scroll;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    header .container{
+        justify-content: space-between;
+        height: 100%;
+  
+    }
+    
+    main h1{
+        margin-top: 2rem;
+    }
+
     main .all-box{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 10%;
         
     }
 
    main .container{
-    padding: 0 8%;
-   }
+    margin: 0 8%;
 
-   
-    main .box-1, .box-2, .box-3{
+   }
+    
+   main .box-1, .box-2, .box-3{
         width: 100%;
-        margin-top: 20px;
+        height: 220px;
     }
 
     main .box-1 img, .box-2 img{
@@ -91,7 +133,15 @@ main .box-txt i:hover{
         height: auto;
     }
 
-    main .box-txt img{
-        height: 55px;
+    main .all-box h2{
+        left: 40px;
+    }
+
+    main .box-txt i{
+        right: 40px;
+    }
+
+    main hr{
+        width: 80%;
     }
 } 

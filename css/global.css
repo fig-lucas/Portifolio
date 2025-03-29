@@ -21,7 +21,7 @@ body{
 }
 
 main{
-    animation: in 1s ease-in-out;
+    animation: in 1s forwards;
 }
 
 /*HEADER*/
