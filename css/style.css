@@ -78,7 +78,8 @@ main .linguagens img:hover{
     }
 
     main .img-intro img{
-        width: 100%;
+        width: 300px;
+        height: 300px;
     }
 
     main .intro {
@@ -87,7 +88,6 @@ main .linguagens img:hover{
         justify-content: center;
         gap: 10px;
         margin-top: 2.5rem;
-        overflow: scroll;
     }
 
     main .txt-intro p{
