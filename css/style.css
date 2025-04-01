@@ -75,6 +75,7 @@ main .linguagens img:hover{
     }
     body{
         overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     main .img-intro img{

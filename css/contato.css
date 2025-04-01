@@ -155,6 +155,7 @@ input:focus, textarea:focus{
 
     body{
         overflow-y: auto;
+        overflow-x: hidden;
     }
 
     header{
